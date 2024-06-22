@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tableau de Bord des Tâches</title>
+
+        <!-- Lien vers le fichier CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Lien vers le fichier JavaScript avec l'ajout du defer pour le traitement asynchrone-->
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!-- En-tête de la page -->
+
+        <header>
+            <h1>Gestionnaire de Tâches</h1>
+        </header>
+
+        <!-- Section principale -->
+
+        <main>
+
+            <!-- Formulaire d'ajouter des tâches -->
+
+            <form id="task-form">
+
+                <div>
+                    <label for="task-name">Nom de la tâche</label>
+                    <input type="text" id="task-name" name="task-name" required>
+                </div>
+
+                <div>
+                    <label for="task-desc">Description de la tâche</label>
+                    <input type="text" id="task-desc" name="task-desc" required>
+                </div>
+
+                <div>
+                    <label for="task-date">Date limite</label>
+                    <input type="date" id="task-date" name="task-date" required>
+                </div>
+
+                <button type="submit">Ajouter la tâche</button>
+
+            </form>
+
+            <!-- Liste des tâches -->
+            <div id="task-list"></div>
+
+        </main>
+
+    </body>
+
+</html>
+
+<!--Quand je regarde le programme en generale, cela me fait penser a une Todolist mis a part l'ajour du ajax bien-sur-->
